@@ -107,7 +107,7 @@ const saveImage = () => {
     canvas.width = previewImg.naturalWidth;
     canvas.height = previewImg.naturalHeight;
 
-    ctx.filter = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
+    ctx.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
     ctx.translate(canvas.width / 2, canvas.height / 2)
 
     if (rotate !== 0) {
