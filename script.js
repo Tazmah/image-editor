@@ -131,7 +131,7 @@ const saveImage = () => {
 }
 
 
-previewImg.addEventListener("click", () => fileInput.click());
+previewImg.addEventListener("click", () => fileInput.click(), { once: true });
 fileInput.addEventListener("change", loadImage);
 filterSlider.addEventListener("input", updateFilter);
 resetFilterBtn.addEventListener("click", resetFilter);
